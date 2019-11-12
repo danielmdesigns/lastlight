@@ -80,9 +80,12 @@ li {
   cursor: pointer;
   -webkit-transition: all .5s ease;
   -o-transition: all .5s ease;
-  transition: all .5s ease; }
+  transition: all .5s ease;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 5px; }
   .nav > a:hover {
-    color: #c1b3a5; }
+    border-bottom: 2px solid #796654;
+    padding-bottom: 5px; }
 
 .article {
   display: -webkit-box;
