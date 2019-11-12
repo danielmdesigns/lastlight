@@ -1,18 +1,19 @@
 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
 body {
   background-color: #27201D;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   padding: 40px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: Georgia, 'Times New Roman', Times, serif;
   background-image: url("/img/bg.png");
   background-repeat: no-repeat;
-  background-size: 100%; }
+  background-size: 100%;
+  background-attachment: fixed; }
 
 .container {
   width: 100%;
@@ -20,7 +21,7 @@ body {
   margin: 0 auto; }
 
 .logo {
-  max-width: 530px;
+  max-width: 760px;
   width: 100%;
   display: block;
   margin: 2rem auto; }
@@ -30,7 +31,8 @@ h1 {
   font-size: 24px;
   line-height: 1.5;
   font-weight: 600;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  margin-top: -5px; }
 
 p {
   color: #FFFFFF;
@@ -39,6 +41,9 @@ p {
   font-weight: 400;
   font-style: italic;
   margin-bottom: 2rem; }
+
+.text-center {
+  text-align: center; }
 
 a {
   color: #796654;
@@ -64,7 +69,7 @@ li {
   li:last-of-type {
     padding-right: 0; }
 
-.nav {
+.nav > a {
   color: #FFFFFF;
   font-size: 14px;
   line-height: 1.5;
@@ -76,5 +81,40 @@ li {
   -webkit-transition: all .5s ease;
   -o-transition: all .5s ease;
   transition: all .5s ease; }
-  .nav:hover {
+  .nav > a:hover {
     color: #c1b3a5; }
+
+.article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 6rem; }
+
+.media {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 40%;
+  flex: 0 0 40%; }
+
+.content {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 60%;
+  flex: 0 0 60%; }
+
+img {
+  width: 100%;
+  margin-bottom: 2rem; }
+
+@media screen and (min-width: 760px) {
+  .article {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .content {
+    padding: 0 0 0 2rem; } }
