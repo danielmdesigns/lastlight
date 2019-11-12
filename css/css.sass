@@ -50,7 +50,7 @@ p
   text-align: center
 
 a
-    color: $gold
+    color: $white
     font-size: 20px
     line-height: 1.5
     font-weight: 400
@@ -58,8 +58,12 @@ a
     margin-bottom: 2rem
     transition: all .5s ease
     text-decoration: none
+    border-bottom: 2px solid transparent
+    padding-bottom: 5px
     &:hover
-        color: lighten($gold, 30%)
+        //color: lighten($gold, 30%)
+        border-bottom: 2px solid $gold
+        padding-bottom: 5px
 
 ul
     text-align: center
