@@ -87,8 +87,13 @@ li {
   border-bottom: 2px solid transparent;
   padding-bottom: 5px; }
   .nav > a:hover {
-    border-bottom: 2px solid #796654;
-    padding-bottom: 5px; }
+    color: #c1b3a5; }
+
+.active {
+  border-bottom: 2px solid #796654;
+  padding-bottom: 5px; }
+  .active:hover {
+    color: #c1b3a5; }
 
 .article {
   display: -webkit-box;
