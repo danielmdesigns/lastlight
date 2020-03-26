@@ -16,24 +16,21 @@
 
   <body>
     <div class="container">
-      <div class="brand">danielmdesigns<span>.</span></div>
-      <!-- <nav>
-        <ul>
-          <li class="nav active"><a href="#">VISUALS</a></li>
-          <li class="nav">
-            <a href="https://lastlightdesign.bigcartel.com/" target="_blank"
-              >SHOP</a
-            >
-          </li>
-          <li class="nav"><a href="#">HISTORY</a></li>
-          <li class="nav">
-            <a
-              href="mailto:daniel@danielmdesigns.com?Subject=lastlight%20design%20co%20inqury"
-              >CONTACT</a
-            >
-          </li>
-        </ul>
-      </nav> -->
+      <header class="the-header clearfix">
+        <div class="brand-logo">
+          <div class="brand">danielmdesigns<span>.</span></div>
+        </div>
+        <a href="#" class="resToggle">MENU</a>
+        <nav class="the-nav">
+          <ul>
+            <li class="nav active"><a href="#">VISUALS</a></li>
+            <li class="nav"><a href="https://lastlightdesign.bigcartel.com/" target="_blank">SHOP</a></li>
+            <li class="nav"><a href="#">HISTORY</a></li>
+            <li class="nav"><a href="mailto:daniel@danielmdesigns.com?Subject=lastlight%20design%20co%20inqury">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
 
       <!-- <img class="logo" src="img/lastlight_logo.png" alt="" /> -->
 
@@ -185,5 +182,11 @@
         </div>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+      $(".resToggle").click(function() {
+        $(".the-nav").toggleClass("active");
+      });
+    </script>
   </body>
 </html>

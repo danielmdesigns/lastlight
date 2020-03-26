@@ -1,0 +1,60 @@
+*, *:after, *:before
+  box-sizing: border-box
+
+.clearfix:after 
+  content: ""
+  display: table
+  clear: both
+
+ul
+  //margin: 0
+  //padding: 0
+
+
+.the-header
+  .brand-logo
+    display: inline-block
+    float: left
+    //padding: 30px 15px
+  a
+    text-decoration: none
+
+a.resToggle
+  display: none
+  color: #FFF
+  font-size: 14px
+  line-height: 1.5
+  font-weight: 600
+  font-style: normal
+  margin-bottom: 2rem
+.the-nav
+  display: inline-block
+  float: right
+  li
+    display: inline-block
+    a 
+      display: block
+      //padding: 30px 15px
+    
+
+@media screen and (max-width: 768px) 
+  a.resToggle  
+    display: inline-block
+    float: right
+    //padding: 30px
+    
+
+  .the-nav 
+    display: none
+    width: 100%
+    margin-top: 2rem
+    &.active 
+      display: block
+    li
+      display: block
+      text-align: center
+      a
+        //padding: 15px 10px
+
+.align-center
+  text-align: center

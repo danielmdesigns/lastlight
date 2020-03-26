@@ -1,3 +1,53 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.the-header .brand-logo {
+  display: inline-block;
+  float: left; }
+
+.the-header a {
+  text-decoration: none; }
+
+a.resToggle {
+  display: none;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 2rem; }
+
+.the-nav {
+  display: inline-block;
+  float: right; }
+  .the-nav li {
+    display: inline-block; }
+    .the-nav li a {
+      display: block; }
+
+@media screen and (max-width: 768px) {
+  a.resToggle {
+    display: inline-block;
+    float: right; }
+  .the-nav {
+    display: none;
+    width: 100%;
+    margin-top: 2rem; }
+    .the-nav.active {
+      display: block; }
+    .the-nav li {
+      display: block;
+      text-align: center; } }
+
+.align-center {
+  text-align: center; }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -44,7 +94,7 @@ h1 {
   color: #FFFFFF;
   line-height: 1.5;
   font-weight: 400;
-  margin: 4rem auto;
+  margin: 1rem auto 4rem;
   text-align: center;
   font-style: italic;
   max-width: 850px; }
@@ -120,17 +170,18 @@ ol {
     border-bottom: 2px solid #796654;
     padding-bottom: 5px; }
 
-nav > ul {
-  text-align: center;
+nav ul {
+  text-align: right;
+  display: block;
   margin-bottom: 2rem; }
 
-nav > ul > li {
+nav ul li {
   display: inline;
   margin-right: 1rem; }
-  nav > ul > li:last-of-type {
+  nav ul li:last-of-type {
     margin-right: 0; }
 
-.nav > a {
+nav a {
   color: #FFFFFF;
   font-size: 14px;
   line-height: 1.5;
@@ -142,14 +193,17 @@ nav > ul > li {
   -webkit-transition: all .5s ease;
   -o-transition: all .5s ease;
   transition: all .5s ease;
-  border-bottom: 2px solid transparent;
   padding-bottom: 5px;
-  text-decoration: none; }
-  .nav > a:hover {
+  text-decoration: none;
+  text-transform: uppercase; }
+  nav a:hover {
     color: #c1b3a5; }
+  @media screen and (min-width: 760px) {
+    nav a {
+      margin-bottom: 0rem; } }
 
 .active {
-  border-bottom: 2px solid #796654;
+  color: #c1b3a5;
   padding-bottom: 5px; }
   .active:hover {
     color: #c1b3a5; }
