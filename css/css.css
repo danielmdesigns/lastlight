@@ -71,23 +71,26 @@ body {
   margin: 0 auto; }
 
 .brand {
-  font-weight: 600;
+  font-weight: 720;
   font-size: 1.125rem;
   font-style: italic;
   text-transform: lowercase;
   color: #FFFFFF;
-  text-align: left;
+  text-align: center;
   display: block;
   text-decoration: none; }
 
-span {
-  color: #796654; }
-
 .logo {
-  max-width: 760px;
+  max-width: 600px;
   width: 100%;
   display: block;
-  margin: 4rem auto; }
+  margin: 1rem auto; }
+
+.secondary-logo {
+  max-width: 50px;
+  width: 100%;
+  display: block;
+  margin: 1rem auto; }
 
 h1 {
   font-size: 2rem;
@@ -126,20 +129,32 @@ p, ul, ol {
   border: 2px solid #796654;
   padding: 20px;
   text-align: center;
-  margin-bottom: 4rem;
   cursor: pointer;
-  display: block;
+  display: inline-block;
   text-decoration: none;
   width: 100%;
   -webkit-transition: background 0.3s ease-in-out;
   -o-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out; }
+  transition: background 0.3s ease-in-out;
+  margin-bottom: 1rem; }
+  .button:last-of-type {
+    margin-bottom: 6rem; }
   .button:hover {
     background-color: #796654; }
   @media screen and (min-width: 760px) {
     .button {
       width: 300px;
-      margin: 4rem auto; } }
+      margin: 0 1rem 6rem 0; } }
+
+.btn-group {
+  display: block;
+  margin: 0 auto;
+  text-align: center; }
+
+.btn-center {
+  margin: 0 auto;
+  text-align: center;
+  display: block; }
 
 ul > li {
   margin-left: 1.25rem; }
@@ -229,6 +244,18 @@ nav a {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 60%;
   flex: 0 0 60%; }
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto; }
 
 img {
   width: 100%;
