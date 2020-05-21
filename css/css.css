@@ -7,12 +7,10 @@
   display: table;
   clear: both; }
 
-.the-header .brand-logo {
-  display: inline-block;
-  float: left; }
-
-.the-header a {
-  text-decoration: none; }
+.the-header {
+  margin-bottom: 2rem; }
+  .the-header a {
+    text-decoration: none; }
 
 a.resToggle {
   display: none;
@@ -71,20 +69,19 @@ body {
   margin: 0 auto; }
 
 .brand {
-  font-weight: 720;
-  font-size: 1.125rem;
-  font-style: italic;
-  text-transform: lowercase;
+  display: inline-block;
+  float: left;
   color: #FFFFFF;
-  text-align: center;
-  display: block;
-  text-decoration: none; }
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 600;
+  font-style: italic; }
 
 .logo {
-  max-width: 600px;
+  max-width: 1000px;
   width: 100%;
   display: block;
-  margin: 1rem auto; }
+  margin: 4rem auto; }
 
 .secondary-logo {
   max-width: 50px;
@@ -93,11 +90,11 @@ body {
   margin: 1rem auto; }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #FFFFFF;
   line-height: 1.5;
   font-weight: 400;
-  margin: 1rem auto 4rem;
+  margin-bottom: 4rem;
   text-align: center;
   font-style: italic;
   max-width: 850px; }
@@ -193,8 +190,6 @@ nav ul {
 nav ul li {
   display: inline;
   margin-right: 1rem; }
-  nav ul li:last-of-type {
-    margin-right: 0; }
 
 nav a {
   color: #FFFFFF;
@@ -269,3 +264,10 @@ img {
     flex-direction: row; }
   .content {
     padding: 0 0 0 2rem; } }
+
+a.resToggle {
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease; }
+  a.resToggle:hover {
+    color: #c1b3a5; }

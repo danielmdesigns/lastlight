@@ -26,20 +26,19 @@ body
     margin: 0 auto
 
 .brand
-  font-weight: 720
-  font-size: 1.125rem
-  font-style: italic
-  text-transform: lowercase
+  display: inline-block
+  float: left
   color: $white
-  text-align: center
-  display: block
-  text-decoration: none
+  font-size: 20px
+  line-height: 1.5
+  font-weight: 600
+  font-style: italic
 
 .logo
-    max-width: 600px
+    max-width: 1000px
     width: 100%
     display: block
-    margin: 1rem auto
+    margin: 4rem auto
 
 .secondary-logo
     max-width: 50px
@@ -48,12 +47,13 @@ body
     margin: 1rem auto
 
 h1
-    font-size: 2rem
+    font-size: 1.5rem
     color: $white
     line-height: 1.5
     font-weight: 400
-    margin: 1rem auto 4rem
+    //margin: 1rem auto 4rem
     //margin-top: -5px
+    margin-bottom: 4rem
     text-align: center
     font-style: italic
     max-width: 850px
@@ -148,8 +148,8 @@ nav ul
 nav ul li
     display: inline
     margin-right: 1rem
-    &:last-of-type
-        margin-right: 0
+    // &:last-of-type
+    //     margin-right: 0
 
 nav a
     color: $white
@@ -205,4 +205,11 @@ img
     flex-direction: row
   .content
       padding: 0 0 0 2rem
+
+
+
+a.resToggle
+  transition: all .5s ease
+  &:hover
+    color: lighten($gold, 30%)
 
