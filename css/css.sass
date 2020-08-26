@@ -1,4 +1,4 @@
-@import menu
+// @import menu
 
 $black: #27201D
 $white: #FFFFFF
@@ -34,13 +34,28 @@ body
   font-weight: 600
   font-style: italic
 
-.logo
-    max-width: 1000px
-    width: 100%
-    display: block
-    margin: 4rem auto
+header
+  display: inline-block
+  margin-bottom: 4rem
+  max-width: 1000px
+  width: 100%
 
-.secondary-logo
+.menu-link
+  display: inline-block
+  color: $white
+  font-size: 14px
+  line-height: 2.5
+  font-weight: 600
+  font-style: normal
+  float: right
+  text-decoration: none
+  transition: all .5s ease
+  border-bottom: 2px solid transparent
+  &:hover
+      border-bottom: 2px solid $gold
+
+
+.logo
     max-width: 50px
     width: 100%
     display: block
@@ -51,9 +66,7 @@ h1
     color: $white
     line-height: 1.5
     font-weight: 400
-    //margin: 1rem auto 4rem
-    //margin-top: -5px
-    margin-bottom: 4rem
+    margin: 0 auto 6rem
     text-align: center
     font-style: italic
     max-width: 850px
@@ -77,7 +90,7 @@ p, ul, ol
     font-style: italic
     margin-bottom: 2rem
 
-.button
+.btn
   font-weight: 600
   font-size: 14px
   text-transform: uppercase
@@ -101,7 +114,6 @@ p, ul, ol
     margin: 0 1rem 6rem 0
 
 .btn-group
-  //border: 1px solid red
   display: block
   margin: 0 auto
   text-align: center
@@ -135,47 +147,16 @@ ol
     border-bottom: 2px solid transparent
     padding-bottom: 5px
     &:hover
-        //color: lighten($gold, 30%)
         border-bottom: 2px solid $gold
         padding-bottom: 5px
 
-nav ul
-    text-align: right
-    display: block
-    margin-bottom: 2rem
-    //border: 1px solid red
-
-nav ul li
-    display: inline
-    margin-right: 1rem
-    // &:last-of-type
-    //     margin-right: 0
-
-nav a
-    color: $white
-    font-size: 14px
-    line-height: 1.5
-    font-weight: 600
-    font-style: normal
-    margin-bottom: 2rem
-    text-align: center
-    cursor: pointer
-    transition: all .5s ease
-    //border-bottom: 2px solid transparent
-    padding-bottom: 5px
-    text-decoration: none
-    text-transform: uppercase
-    &:hover
-        color: lighten($gold, 30%)
-    @media screen and (min-width: 760px)
-      margin-bottom: 0rem
-
 .active
-    //border-bottom: 2px solid $gold
-    color: lighten($gold, 30%)
+    color: $white
+    border-bottom: 2px solid $gold
     padding-bottom: 5px
     &:hover
-        color: lighten($gold, 30%)
+        color: $gold
+        border-bottom: 2px solid $gold
 
 
 .article
@@ -206,10 +187,4 @@ img
   .content
       padding: 0 0 0 2rem
 
-
-
-a.resToggle
-  transition: all .5s ease
-  &:hover
-    color: lighten($gold, 30%)
 
