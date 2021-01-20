@@ -6,13 +6,18 @@
   display: table
   clear: both
 
-ul
-  //margin: 0
-  //padding: 0
-
+.the-nav > ul
+  display: block
+  width: 100%
+  @media screen and (max-width: 768px)
+    //when the screen is small
+    margin-top: 1rem
+  li
+    margin-bottom: 1rem
+    &:last-of-type
+      margin-bottom: 0
 
 .the-header
-  margin-bottom: 2rem
   a
     text-decoration: none
 
@@ -23,10 +28,11 @@ a.resToggle
   line-height: 1.5
   font-weight: 600
   font-style: normal
-  margin-bottom: 2rem
+  margin-top: 0.40rem
 .the-nav
   display: inline-block
   float: right
+  margin-bottom: -6rem
   li
     display: inline-block
     a 
@@ -37,7 +43,6 @@ a.resToggle
   a.resToggle  
     display: inline-block
     float: right
-    //padding: 30px
     
 
   .the-nav 
@@ -50,7 +55,6 @@ a.resToggle
       display: block
       text-align: center
       a
-        //padding: 15px 10px
 
 .align-center
   text-align: center

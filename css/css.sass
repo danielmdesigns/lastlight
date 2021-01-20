@@ -1,4 +1,4 @@
-// @import menu
+@import menu
 
 $black: #27201D
 $white: #FFFFFF
@@ -36,9 +36,10 @@ body
 
 header
   display: inline-block
-  margin-bottom: 4rem
   max-width: 1000px
   width: 100%
+  @media screen and (max-width: 768px)
+    //when the screen is small
 
 .menu-link
   display: inline-block
@@ -47,13 +48,15 @@ header
   line-height: 2.5
   font-weight: 600
   font-style: normal
-  float: right
   text-decoration: none
   transition: all .5s ease
   border-bottom: 2px solid transparent
   &:hover
       border-bottom: 2px solid $gold
-
+  @media screen and (max-width: 768px)
+    &:hover
+      border-bottom: 2px solid transparent
+      color: $gold
 
 .logo
     max-width: 50px
@@ -61,12 +64,18 @@ header
     display: block
     margin: 1rem auto
 
+.dot
+    color: $gold
+
+.bullet
+  margin-left: 20px
+
 h1
     font-size: 1.5rem
     color: $white
     line-height: 1.5
     font-weight: 400
-    margin: 0 auto 6rem
+    margin: 5rem auto 7rem
     text-align: center
     font-style: italic
     max-width: 850px
@@ -82,7 +91,7 @@ h2
     margin-bottom: 1rem
     margin-top: -5px
 
-p, ul, ol
+p, ol, ul
     color: $white
     font-size: 20px
     line-height: 1.5
@@ -108,8 +117,8 @@ p, ul, ol
     margin-bottom: 6rem
   &:hover
     background-color: $gold
-  //when screen is large
   @media screen and (min-width: 760px)
+    //when screen is large
     width: 300px
     margin: 0 1rem 6rem 0
 
@@ -125,6 +134,9 @@ p, ul, ol
 
 ul > li
   margin-left: 1.25rem
+@media screen and (max-width: 768px)
+  ul > li
+    margin-left: 0
 
 ol > li
   margin-left: 2rem
@@ -144,20 +156,17 @@ ol
     margin-bottom: 2rem
     transition: all .5s ease
     text-decoration: none
-    border-bottom: 2px solid transparent
-    padding-bottom: 5px
-    &:hover
-        border-bottom: 2px solid $gold
-        padding-bottom: 5px
-
-.active
-    color: $white
     border-bottom: 2px solid $gold
     padding-bottom: 5px
     &:hover
+        padding-bottom: 5px
         color: $gold
-        border-bottom: 2px solid $gold
 
+.active
+  border-bottom: 2px solid $gold
+  @media screen and (max-width: 768px)
+      border-bottom: 2px solid transparent
+      color: $gold
 
 .article
   display: flex
