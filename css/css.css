@@ -128,7 +128,7 @@ h1 {
   color: #FFFFFF;
   line-height: 1.5;
   font-weight: 400;
-  margin: 5rem auto 7rem;
+  margin: 5rem auto 0;
   text-align: center;
   font-style: italic;
   max-width: 850px; }
@@ -166,8 +166,7 @@ p, ol, ul {
   width: 100%;
   -webkit-transition: background 0.3s ease-in-out;
   -o-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
-  margin-bottom: 1rem; }
+  transition: background 0.3s ease-in-out; }
   .btn:last-of-type {
     margin-bottom: 6rem; }
   .btn:hover {
@@ -177,13 +176,21 @@ p, ol, ul {
       width: 300px;
       margin: 0 1rem 6rem 0; } }
 
+.btn a {
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 2.5;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none; }
+
 .btn-group {
   display: block;
   margin: 0 auto;
   text-align: center; }
 
 .btn-center {
-  margin: 0 auto;
+  margin: 5rem auto;
   text-align: center;
   display: block; }
 
