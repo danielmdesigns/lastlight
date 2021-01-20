@@ -2,7 +2,9 @@
 
 $black: #27201D
 $white: #FFFFFF
+$darkgold: #453A30
 $gold: #796654
+$lightgold: #917B65
 
 *
     box-sizing: border-box
@@ -52,7 +54,7 @@ header
   transition: all .5s ease
   border-bottom: 2px solid transparent
   &:hover
-      border-bottom: 2px solid $gold
+      border-bottom: 2px solid $lightgold
   @media screen and (max-width: 768px)
     &:hover
       border-bottom: 2px solid transparent
@@ -167,13 +169,13 @@ ol
     padding-bottom: 5px
     &:hover
         padding-bottom: 5px
-        color: $gold
+        color: $lightgold
 
 .active
   border-bottom: 2px solid $gold
   @media screen and (max-width: 768px)
       border-bottom: 2px solid transparent
-      color: $gold
+      color: $lightgold
 
 .article
   display: flex

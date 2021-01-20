@@ -105,7 +105,7 @@ header {
   transition: all .5s ease;
   border-bottom: 2px solid transparent; }
   .menu-link:hover {
-    border-bottom: 2px solid #796654; }
+    border-bottom: 2px solid #917B65; }
   @media screen and (max-width: 768px) {
     .menu-link:hover {
       border-bottom: 2px solid transparent;
@@ -225,14 +225,14 @@ ol {
   padding-bottom: 5px; }
   .link:hover {
     padding-bottom: 5px;
-    color: #796654; }
+    color: #917B65; }
 
 .active {
   border-bottom: 2px solid #796654; }
   @media screen and (max-width: 768px) {
     .active {
       border-bottom: 2px solid transparent;
-      color: #796654; } }
+      color: #917B65; } }
 
 .article {
   display: -webkit-box;
