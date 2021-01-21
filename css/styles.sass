@@ -1,0 +1,181 @@
+@import menu
+
+$black: #27201D
+$white: #FFFFFF
+$darkgold: #453A30
+$gold: #796654
+$lightgold: #917B65
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    background-color: $black
+    padding: 40px
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    font-family: Georgia, 'Times New Roman', Times, serif
+    background-image: url('../img/bg.png')
+    background-repeat: no-repeat
+    background-size: 100%
+    background-attachment: fixed
+
+.container
+   width: 100%
+   max-width: 1000px
+   margin: 0 auto
+
+.logo
+    display: block
+    width: 100%
+    max-width: 1000px
+    margin: 2.5rem auto
+
+
+/* MENU */
+nav > ul
+    overflow: hidden
+    margin: 0
+    padding: 0
+    transition: max-height .4s
+    text-align: center
+    color: $white
+
+nav a
+    text-decoration: none
+    color: inherit
+
+nav > ul li
+    display: inline-block
+    padding: 10px
+    transition: all .5s ease
+    color: $white
+    font-size: 1rem
+    font-weight: 600
+    font-style: normal
+    //border-bottom: 2px solid transparent
+    &:hover
+        cursor: pointer
+        color: $lightgold
+        //border-bottom: 2px solid $lightgold
+
+nav > ul > li
+  margin-left: 0
+
+.toggle
+    display: none
+    box-sizing: 100%
+    width: 100%
+    padding: 15px 0
+    cursor: pointer
+    text-align: left
+    //color: #fff
+
+h1
+    font-size: 1.75rem
+    color: $white
+    line-height: 1.5
+    font-weight: 400
+    text-align: center
+    font-style: italic
+    max-width: 1000px
+    margin: 0 auto
+    //when screen is large
+    @media screen and (min-width: 760px)
+      text-align: center
+
+h2
+    color: $white
+    font-size: 24px
+    line-height: 1.5
+    font-weight: 600
+    margin-bottom: 1rem
+    //margin-top: -5px
+.btn
+    font-weight: 600
+    font-size: 1rem
+    text-transform: uppercase
+    color: $white
+    border: 2px solid $gold
+    padding: 20px
+    text-align: center
+    cursor: pointer
+    display: block
+    text-decoration: none
+    width: 100%
+    transition: background 0.3s ease-in-out
+    margin: 4rem auto
+    &:hover
+        background-color: $gold
+    @media screen and (min-width: 760px)
+        //when screen is large
+        width: 300px
+        margin: 6rem auto 8rem
+
+.article
+  display: flex
+  flex-direction: column
+  width: 100%
+  max-width: 1000px
+  margin: 0 auto 8rem
+  @media screen and (min-width: 760px)
+        //when screen is large
+        flex-direction: row
+.media
+  flex: 0 0 40%
+.content
+  flex: 0 0 60%
+  @media screen and (min-width: 760px)
+        //when screen is large
+        padding: 0 0 0 2rem
+.project
+  display: flex
+  flex-direction: column
+  width: 100%
+  max-width: 1000px
+  margin: 0 auto
+
+img
+  width: 100%
+  margin-bottom: 2rem
+
+p, ol, ul
+    color: $white
+    font-size: 20px
+    line-height: 1.5
+    font-weight: 400
+    font-style: italic
+    margin-bottom: 2rem
+
+.link
+    color: $white
+    font-size: 20px
+    line-height: 1.5
+    font-weight: 400
+    font-style: italic
+    margin-bottom: 2rem
+    transition: all .5s ease
+    text-decoration: none
+    border-bottom: 2px solid $gold
+    padding-bottom: 5px
+    &:hover
+        padding-bottom: 5px
+        color: $lightgold
+
+    
+ul > li
+  margin-left: 1.25rem
+
+ol > li
+  margin-left: 2rem
+
+ol
+  list-style-type: decimal-leading-zero
+
+.dwm
+    max-width: 50px
+    width: 100%
+    display: block
+    margin: 1rem auto
